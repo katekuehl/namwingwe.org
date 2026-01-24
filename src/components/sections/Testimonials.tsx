@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
-import { Quote, Star } from "lucide-react";
+import { Quote, ArrowRight } from "lucide-react";
 import { siteContent } from "@/data/content";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
+
+const imageMap: { [key: string]: string } = {
+  "testimonial-1": testimonial1,
+  "testimonial-2": testimonial2,
+  "testimonial-3": testimonial3,
+};
 
 export const Testimonials = () => {
   return (
@@ -41,27 +50,36 @@ export const Testimonials = () => {
                 </div>
               </div>
 
-              {/* Stars */}
-              <div className="flex gap-1 mb-4 pt-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 text-accent fill-accent" />
-                ))}
-              </div>
-
               {/* Quote */}
-              <p className="text-foreground leading-relaxed mb-6 italic">
+              <p className="text-foreground leading-relaxed mb-6 italic pt-4">
                 "{testimonial.quote}"
               </p>
 
-              {/* Author */}
-              <div className="border-t border-border pt-4">
-                <div className="font-display font-semibold text-foreground">
-                  {testimonial.name}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {testimonial.role} at {testimonial.company}
+              {/* Author with Photo */}
+              <div className="border-t border-border pt-4 flex items-center gap-4">
+                <img
+                  src={imageMap[testimonial.image]}
+                  alt={testimonial.name}
+                  className="w-14 h-14 rounded-full object-cover border-2 border-primary/20"
+                />
+                <div className="flex-1">
+                  <div className="font-display font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonial.role} at {testimonial.company}
+                  </div>
                 </div>
               </div>
+
+              {/* Blog Link */}
+              <a
+                href={testimonial.blogLink}
+                className="mt-4 inline-flex items-center text-primary font-medium text-sm hover:underline group"
+              >
+                Read full story
+                <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
             </motion.div>
           ))}
         </div>
