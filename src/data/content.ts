@@ -120,6 +120,8 @@ export const siteContent = {
       name: "Grace Namaganda",
       role: "Frontend Developer",
       company: "SafeBoda",
+      image: "testimonial-1",
+      blogLink: "/blog/grace-namaganda-story",
     },
     {
       id: 2,
@@ -127,6 +129,8 @@ export const siteContent = {
       name: "Esther Akello",
       role: "Data Analyst",
       company: "Jumia Uganda",
+      image: "testimonial-2",
+      blogLink: "/blog/esther-akello-story",
     },
     {
       id: 3,
@@ -134,6 +138,8 @@ export const siteContent = {
       name: "Florence Auma",
       role: "UX Designer",
       company: "Andela",
+      image: "testimonial-3",
+      blogLink: "/blog/florence-auma-story",
     },
   ],
 
