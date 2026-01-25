@@ -47,7 +47,7 @@ export const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img src={logo} alt={siteContent.brand.name} className="h-10 sm:h-12 w-auto" />
-            <span className={`font-body font-normal text-lg sm:text-xl hidden sm:block ${isScrolled ? "text-secondary-foreground" : "text-foreground"}`}>
+            <span className="font-body font-normal text-lg sm:text-xl hidden sm:block text-secondary-foreground">
               {siteContent.brand.name}
             </span>
           </a>
@@ -58,7 +58,7 @@ export const Header = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className={`text-sm font-medium transition-colors ${isScrolled ? "text-secondary-foreground/80 hover:text-primary" : "text-foreground/80 hover:text-primary"}`}
+                className="text-sm font-medium text-secondary-foreground/80 hover:text-primary transition-colors"
               >
                 {link.label}
               </button>
@@ -75,7 +75,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`lg:hidden p-2 ${isScrolled ? "text-secondary-foreground" : "text-foreground"}`}
+            className="lg:hidden p-2 text-secondary-foreground"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
