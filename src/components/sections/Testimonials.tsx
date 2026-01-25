@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Quote, ArrowRight } from "lucide-react";
 import { siteContent } from "@/data/content";
 import testimonial1 from "@/assets/testimonial-1.jpg";
@@ -73,13 +74,13 @@ export const Testimonials = () => {
               </div>
 
               {/* Blog Link */}
-              <a
-                href={testimonial.blogLink}
+              <Link
+                to={testimonial.blogLink}
                 className="mt-4 inline-flex items-center text-primary font-medium text-sm hover:underline group"
               >
                 Read full story
                 <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>
