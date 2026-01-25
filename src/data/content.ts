@@ -1,7 +1,7 @@
 // Centralized content for easy editing
 export const siteContent = {
   brand: {
-    name: "Namwingwe TechRise",
+    name: "Namwingwe Techrise",
     tagline: "Empowering Women in Tech",
   },
 
