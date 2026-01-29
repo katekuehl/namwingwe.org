@@ -153,10 +153,6 @@ export const siteContent = {
       answer: "Our bootcamps typically run for 12-16 weeks for full-time programs, or 6 months for part-time options. We also offer shorter workshops and intensive courses.",
     },
     {
-      question: "Are scholarships available?",
-      answer: "Yes! We offer partial and full scholarships based on financial need and merit. We believe finances should never be a barrier to education.",
-    },
-    {
       question: "What support do graduates receive?",
       answer: "Graduates receive ongoing career support including job placement assistance, alumni networking events, and access to our community of tech professionals.",
     },
