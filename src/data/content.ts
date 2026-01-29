@@ -166,7 +166,7 @@ export const siteContent = {
     title: "Get In Touch",
     subtitle: "Ready to start your tech journey? We'd love to hear from you.",
     email: "hello@namwingwetechrise.org",
-    phone: "+256 700 123 456",
+    phone: "+256 786 946529",
     address: "Plot 24, Kampala Road, Kampala, Uganda",
     social: {
       twitter: "https://twitter.com/namwingwetech",
