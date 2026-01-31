@@ -36,7 +36,7 @@ export const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary-foreground text-sm font-medium mb-6">
-              🚀 Empowering Women in Tech Since 2019
+              🚀 Empowering Women in Tech Since 2022
             </span>
           </motion.div>
 
