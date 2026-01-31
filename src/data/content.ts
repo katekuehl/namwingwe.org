@@ -44,8 +44,8 @@ export const siteContent = {
     },
     {
       id: 2,
-      title: "Data Science & Analytics",
-      description: "Learn Python, data visualization, and machine learning fundamentals. Transform data into actionable insights.",
+      title: "Graphic Design",
+      description: "Master Adobe Creative Suite, brand identity, and visual communication. Create stunning designs that captivate audiences.",
       icon: "BarChart3",
     },
     {
@@ -179,7 +179,7 @@ export const siteContent = {
   footer: {
     description: "Empowering Ugandan women to build successful careers in technology through world-class training and mentorship.",
     links: {
-      programs: ["Web Development", "Data Science", "UI/UX Design", "Digital Marketing"],
+      programs: ["Web Development", "Graphic Design", "UI/UX Design", "Digital Marketing"],
       company: ["About Us", "Our Team", "Careers", "Press"],
       resources: ["Blog", "Success Stories", "FAQ", "Contact"],
     },
