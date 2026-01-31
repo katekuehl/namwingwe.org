@@ -78,9 +78,9 @@ What set Namwingwe apart from other programs was the personalized mentorship. My
 
 Dr. Namara helped me understand that being from Northern Uganda wasn't a disadvantage – it was a unique perspective I could bring to data analysis. She taught me to speak up in meetings, negotiate my salary, and advocate for myself.
 
-## Mastering Data Science
+## Mastering Graphic Design
 
-The Data Science & Analytics program was rigorous. We learned Python, SQL, data visualization, and machine learning fundamentals. But more importantly, we learned how to think like data scientists – asking the right questions and finding insights in complex datasets.
+The Graphic Design program was rigorous. We learned Adobe Photoshop, Illustrator, InDesign, and visual communication fundamentals. But more importantly, we learned how to think like designers – understanding brand identity and creating visuals that tell compelling stories.
 
 My favorite project was analyzing agricultural data to predict crop yields in different regions of Uganda. This work felt meaningful because it could directly impact farmers' lives.
 
