@@ -56,9 +56,9 @@ export const siteContent = {
     },
     {
       id: 4,
-      title: "Digital Marketing",
-      description: "Build skills in SEO, social media marketing, and content strategy to help businesses grow online.",
-      icon: "TrendingUp",
+      title: "Website Design",
+      description: "Learn to create beautiful, functional websites using modern design principles and development tools.",
+      icon: "Monitor",
     },
     {
       id: 5,
@@ -179,7 +179,7 @@ export const siteContent = {
   footer: {
     description: "Empowering Ugandan women to build successful careers in technology through world-class training and mentorship.",
     links: {
-      programs: ["Web Development", "Graphic Design", "UI/UX Design", "Digital Marketing"],
+      programs: ["Web Development", "Graphic Design", "UI/UX Design", "Website Design"],
       company: ["About Us", "Our Team", "Careers", "Press"],
       resources: ["Blog", "Success Stories", "FAQ", "Contact"],
     },
