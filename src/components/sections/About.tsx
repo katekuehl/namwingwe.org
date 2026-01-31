@@ -31,7 +31,7 @@ export const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-bronze"
             >
-              <div className="text-4xl font-bold font-display">5+</div>
+              <div className="text-4xl font-bold font-display">3+</div>
               <div className="text-sm opacity-90">Years Empowering Women</div>
             </motion.div>
           </motion.div>
