@@ -2,12 +2,7 @@ import { motion } from "framer-motion";
 import { Award, Users, Building, Star } from "lucide-react";
 
 const partners = [
-  { name: "SafeBoda", icon: Building },
   { name: "MTN Uganda", icon: Building },
-  { name: "Andela", icon: Building },
-  { name: "Jumia", icon: Building },
-  { name: "GIZ", icon: Award },
-  { name: "USAID", icon: Award },
 ];
 
 export const TrustStrip = () => {
