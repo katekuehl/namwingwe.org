@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { siteContent } from "@/data/content";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+
+const programLinks: Record<string, string> = {
+  "Web Development": "/web-development",
+  "Graphic Design": "/graphic-design",
+  "UI/UX Design": "/ui-ux-design",
+  "Website Design": "/website-design",
+};
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
