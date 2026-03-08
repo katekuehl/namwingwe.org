@@ -30,12 +30,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {siteContent.footer.links.programs.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
+                  <Link
+                    to={programLinks[link] || "#"}
                     className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
