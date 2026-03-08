@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { siteContent } from "@/data/content";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+
+const programLinks: Record<string, string> = {
+  "Web Development": "/web-development",
+  "Graphic Design": "/graphic-design",
+  "UI/UX Design": "/ui-ux-design",
+  "Website Design": "/website-design",
+};
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,12 +38,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {siteContent.footer.links.programs.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
+                  <Link
+                    to={programLinks[link] || "#"}
                     className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

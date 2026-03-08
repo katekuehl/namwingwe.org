@@ -7,8 +7,6 @@ import { siteContent } from "@/data/content";
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
