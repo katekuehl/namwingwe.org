@@ -16,7 +16,7 @@ export const siteContent = {
     title: "Trusted by leading organizations",
     stats: [
       { value: "500+", label: "Women Trained" },
-      { value: "85%", label: "Employment Rate" },
+      
       { value: "50+", label: "Partner Companies" },
       { value: "4.9", label: "Student Rating" },
     ],
