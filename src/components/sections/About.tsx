@@ -7,33 +7,6 @@ export const About = () => {
     <section id="about" className="section-padding bg-background">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image/Pattern Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative"
-          >
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-elevated bg-primary/10 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">💻</div>
-                <p className="text-primary font-display font-semibold text-xl">Empowering Women in Tech</p>
-              </div>
-            </div>
-            {/* Floating Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-bronze"
-            >
-              <div className="text-4xl font-bold font-display">3+</div>
-              <div className="text-sm opacity-90">Years Empowering Women</div>
-            </motion.div>
-          </motion.div>
-
           {/* Content Side */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
