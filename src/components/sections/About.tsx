@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Target, Heart, Zap } from "lucide-react";
 import { siteContent } from "@/data/content";
-import pattern from "@/assets/pattern.png";
 
 export const About = () => {
   return (
@@ -16,12 +15,11 @@ export const About = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-elevated">
-              <img
-                src={pattern}
-                alt="African tech pattern"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-elevated bg-primary/10 flex items-center justify-center">
+              <div className="text-center p-8">
+                <div className="text-6xl mb-4">💻</div>
+                <p className="text-primary font-display font-semibold text-xl">Empowering Women in Tech</p>
+              </div>
             </div>
             {/* Floating Card */}
             <motion.div
