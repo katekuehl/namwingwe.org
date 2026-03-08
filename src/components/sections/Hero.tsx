@@ -24,8 +24,6 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/85 to-secondary/70" />
       </div>
 
-      {/* African Pattern Overlay */}
-      <div className="absolute inset-0 african-pattern opacity-30 z-[1]" />
 
       {/* Content */}
       <div className="section-container relative z-10 pt-24 pb-16">
