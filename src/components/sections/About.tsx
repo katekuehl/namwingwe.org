@@ -6,8 +6,7 @@ export const About = () => {
   return (
     <section id="about" className="section-padding bg-background">
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content Side */}
+        <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
