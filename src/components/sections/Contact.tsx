@@ -76,7 +76,7 @@ export const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block text-primary font-medium text-sm uppercase tracking-wider mb-4">
+          <span className="eyebrow inline-block text-primary mb-4">
             Contact Us
           </span>
           <h2 className="heading-section text-foreground mb-4">
@@ -101,7 +101,7 @@ export const Contact = () => {
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Email</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Email</h3>
                   <a
                     href={`mailto:${siteContent.contact.email}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -116,7 +116,7 @@ export const Contact = () => {
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Phone</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Phone</h3>
                   <a
                     href={`tel:${siteContent.contact.phone.replace(/\s/g, "")}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -131,7 +131,7 @@ export const Contact = () => {
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Address</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Address</h3>
                   <p className="text-muted-foreground">
                     {siteContent.contact.address}
                   </p>
@@ -141,7 +141,7 @@ export const Contact = () => {
 
             {/* Social Links */}
             <div className="mt-10 pt-8 border-t border-border">
-              <h3 className="font-display font-semibold text-foreground mb-4">
+              <h3 className="font-body font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
                 Follow Us
               </h3>
               <div className="flex gap-4">

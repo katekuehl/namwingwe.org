@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-3 mb-6">
               <img src={logo} alt={siteContent.brand.name} className="h-10 w-auto" />
-              <span className="font-display font-bold text-lg text-secondary-foreground">
+              <span className="font-body font-semibold text-base text-secondary-foreground tracking-tight">
                 {siteContent.brand.name}
               </span>
             </a>
@@ -32,7 +32,7 @@ export const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h4 className="font-display font-semibold text-secondary-foreground mb-4">
+            <h4 className="font-body font-semibold text-secondary-foreground mb-4 text-sm uppercase tracking-wider">
               Programs
             </h4>
             <ul className="space-y-3">
@@ -51,7 +51,7 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-semibold text-secondary-foreground mb-4">
+            <h4 className="font-body font-semibold text-secondary-foreground mb-4 text-sm uppercase tracking-wider">
               Company
             </h4>
             <ul className="space-y-3">
@@ -70,7 +70,7 @@ export const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-display font-semibold text-secondary-foreground mb-4">
+            <h4 className="font-body font-semibold text-secondary-foreground mb-4 text-sm uppercase tracking-wider">
               Resources
             </h4>
             <ul className="space-y-3">

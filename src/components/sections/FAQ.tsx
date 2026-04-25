@@ -19,7 +19,7 @@ export const FAQ = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block text-primary font-medium text-sm uppercase tracking-wider mb-4">
+            <span className="eyebrow inline-block text-primary mb-4">
               FAQ
             </span>
             <h2 className="heading-section text-foreground mb-6">
@@ -29,7 +29,7 @@ export const FAQ = () => {
               Find answers to common questions about our programs, admissions, and more.
             </p>
             <div className="bg-primary/10 rounded-xl p-6">
-              <h3 className="font-display font-semibold text-foreground mb-2">
+              <h3 className="font-body font-semibold text-foreground mb-2 tracking-tight">
                 Still have questions?
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
@@ -58,7 +58,7 @@ export const FAQ = () => {
                   value={`item-${index}`}
                   className="bg-background rounded-lg border border-border px-6 data-[state=open]:border-primary/30"
                 >
-                  <AccordionTrigger className="text-left font-display font-medium text-foreground hover:text-primary hover:no-underline py-4">
+                  <AccordionTrigger className="text-left font-body font-semibold text-foreground hover:text-primary hover:no-underline py-4 text-base">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-4">
