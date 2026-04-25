@@ -29,7 +29,7 @@ export const FAQ = () => {
               Find answers to common questions about our programs, admissions, and more.
             </p>
             <div className="bg-primary/10 rounded-xl p-6">
-              <h3 className="font-display font-semibold text-foreground mb-2">
+              <h3 className="font-body font-semibold text-foreground mb-2 tracking-tight">
                 Still have questions?
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
