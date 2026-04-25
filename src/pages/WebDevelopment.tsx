@@ -54,15 +54,15 @@ const WebDevelopment = () => {
 
               <div className="space-y-6">
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="font-display font-semibold text-foreground mb-2">Duration</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-2 text-sm uppercase tracking-wider">Duration</h3>
                   <p className="text-muted-foreground">12–16 weeks (full-time) or 6 months (part-time)</p>
                 </div>
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="font-display font-semibold text-foreground mb-2">Format</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-2 text-sm uppercase tracking-wider">Format</h3>
                   <p className="text-muted-foreground">In-person at our Kampala center + online options</p>
                 </div>
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="font-display font-semibold text-foreground mb-2">Prerequisites</h3>
+                  <h3 className="font-body font-semibold text-foreground mb-2 text-sm uppercase tracking-wider">Prerequisites</h3>
                   <p className="text-muted-foreground">No prior coding experience required</p>
                 </div>
                 <Button asChild size="lg" className="w-full">
