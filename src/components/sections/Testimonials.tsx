@@ -85,8 +85,8 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <CarouselPrevious className="hidden md:flex -left-4 lg:-left-6" />
+          <CarouselNext className="hidden md:flex -right-4 lg:-right-6" />
         </Carousel>
       </div>
     </section>
