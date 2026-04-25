@@ -73,14 +73,6 @@ export const Testimonials = () => {
                 </div>
               </div>
 
-              {/* Blog Link */}
-              <Link
-                to={testimonial.blogLink}
-                className="mt-4 inline-flex items-center text-primary font-medium text-sm hover:underline group"
-              >
-                Read full story
-                <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
             </motion.div>
           ))}
         </div>
