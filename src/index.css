@@ -130,12 +130,16 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+    @apply tracking-tight;
   }
 }
 
@@ -150,16 +154,28 @@
 
   .heading-display {
     font-family: var(--font-display);
-    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+    @apply text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05];
   }
 
   .heading-section {
     font-family: var(--font-display);
-    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+    @apply text-3xl sm:text-4xl font-semibold tracking-tight leading-[1.1];
   }
 
   .text-body-large {
     @apply text-lg sm:text-xl leading-relaxed;
+  }
+
+  /* Small UI label — Inter, uppercase, tight tracking */
+  .ui-label {
+    font-family: var(--font-body);
+    @apply text-xs font-semibold uppercase tracking-[0.12em];
+  }
+
+  /* Inline eyebrow text */
+  .eyebrow {
+    font-family: var(--font-body);
+    @apply text-sm font-medium uppercase tracking-[0.18em];
   }
 
   .gradient-text {
