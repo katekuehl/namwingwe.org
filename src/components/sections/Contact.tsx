@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Twitter, Linkedin, Instagram, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Youtube, Linkedin, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -60,10 +60,10 @@ export const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: siteContent.contact.social.twitter, label: "Twitter" },
-    { icon: Linkedin, href: siteContent.contact.social.linkedin, label: "LinkedIn" },
     { icon: Instagram, href: siteContent.contact.social.instagram, label: "Instagram" },
     { icon: Facebook, href: siteContent.contact.social.facebook, label: "Facebook" },
+    { icon: Youtube, href: siteContent.contact.social.youtube, label: "YouTube" },
+    { icon: Linkedin, href: siteContent.contact.social.linkedin, label: "LinkedIn" },
   ];
 
   return (
