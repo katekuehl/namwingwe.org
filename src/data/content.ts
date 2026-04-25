@@ -189,7 +189,7 @@ export const siteContent = {
     social: {
       instagram: "https://www.instagram.com/namwingwe_techrise/",
       facebook: "https://www.facebook.com/NamwingweTechRise",
-      youtube: "https://studio.youtube.com/channel/UCqd8WBByHDaARcXHv8eK1JA",
+      youtube: "https://www.youtube.com/@NamwingweTechrise",
       linkedin: "https://www.linkedin.com/in/namwingwe-techrise/",
     },
   },
