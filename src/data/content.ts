@@ -180,7 +180,7 @@ export const siteContent = {
     description: "Empowering Ugandan women to build successful careers in technology through world-class training and mentorship.",
     links: {
       programs: ["Web Development", "Graphic Design", "UI/UX Design", "Website Design"],
-      company: ["About Us", "Our Team", "Careers", "Press"],
+      company: ["About Us", "Our Team", "Press"],
       resources: ["Blog", "Success Stories", "FAQ", "Contact"],
     },
     copyright: "© 2024 Namwingwe TechRise. All rights reserved.",
