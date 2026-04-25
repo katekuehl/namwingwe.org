@@ -34,7 +34,7 @@ export const Testimonials = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {siteContent.testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
