@@ -165,14 +165,14 @@ export const siteContent = {
   contact: {
     title: "Get In Touch",
     subtitle: "Ready to start your tech journey? We'd love to hear from you.",
-    email: "hello@namwingwetechrise.org",
+    email: "namwingwetechrise@gmail.com",
     phone: "+256 786 946529",
     address: "Plot 24, Kampala Road, Kampala, Uganda",
     social: {
-      twitter: "https://twitter.com/namwingwetech",
-      linkedin: "https://linkedin.com/company/namwingwe-techrise",
-      instagram: "https://instagram.com/namwingwetechrise",
-      facebook: "https://facebook.com/namwingwetechrise",
+      instagram: "https://www.instagram.com/namwingwe_techrise/",
+      facebook: "https://www.facebook.com/NamwingweTechRise",
+      youtube: "https://studio.youtube.com/channel/UCqd8WBByHDaARcXHv8eK1JA",
+      linkedin: "https://www.linkedin.com/in/namwingwe-techrise/",
     },
   },
 
