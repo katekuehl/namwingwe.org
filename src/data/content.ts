@@ -17,7 +17,7 @@ export const siteContent = {
     stats: [
       { value: "500+", label: "Women Trained" },
       
-      { value: "50+", label: "Partner Companies" },
+      
       { value: "4.9", label: "Student Rating" },
     ],
   },
