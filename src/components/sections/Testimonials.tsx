@@ -23,7 +23,7 @@ export const Testimonials = () => {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block text-primary font-medium text-sm uppercase tracking-wider mb-4">
+          <span className="eyebrow inline-block text-primary mb-4">
             Success Stories
           </span>
           <h2 className="heading-section text-secondary-foreground mb-4">
@@ -64,7 +64,7 @@ export const Testimonials = () => {
                   className="w-14 h-14 rounded-full object-cover border-2 border-primary/20"
                 />
                 <div className="flex-1">
-                  <div className="font-display font-semibold text-foreground">
+                  <div className="font-body font-semibold text-foreground tracking-tight">
                     {testimonial.name}
                   </div>
                   <div className="text-sm text-muted-foreground">

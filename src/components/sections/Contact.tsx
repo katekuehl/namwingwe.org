@@ -76,7 +76,7 @@ export const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block text-primary font-medium text-sm uppercase tracking-wider mb-4">
+          <span className="eyebrow inline-block text-primary mb-4">
             Contact Us
           </span>
           <h2 className="heading-section text-foreground mb-4">
