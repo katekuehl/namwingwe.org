@@ -117,7 +117,7 @@ export const siteContent = {
     {
       id: 1,
       quote: "Before joining Namwigwe TechRise, I had never touched a computer. Today I can use digital tools, communicate online, and even help others in my community learn technology.",
-      name: "Grace Namaganda",
+      name: "Nakayenze Joyce",
       role: "Digital Skills Graduate",
       company: "Namwingwe TechRise",
       image: "testimonial-1",
@@ -126,7 +126,7 @@ export const siteContent = {
     {
       id: 2,
       quote: "Namwigwe TechRise opened my eyes to the possibilities of technology. As a woman from a rural area, I never imagined I could learn skills that connect me to the world.",
-      name: "Esther Akello",
+      name: "Nambozo Hellen",
       role: "Web Development Graduate",
       company: "Namwingwe TechRise",
       image: "testimonial-2",
@@ -135,7 +135,7 @@ export const siteContent = {
     {
       id: 3,
       quote: "Through Namwigwe TechRise, I gained confidence and practical tech skills that are helping me build a better future for myself and my family.",
-      name: "Florence Auma",
+      name: "Nabukonde Fiona",
       role: "UI/UX Design Graduate",
       company: "Namwingwe TechRise",
       image: "testimonial-3",
@@ -144,7 +144,7 @@ export const siteContent = {
     {
       id: 4,
       quote: "The training at Namwigwe TechRise showed me that women in rural communities can also thrive in technology if given the opportunity and support.",
-      name: "Sarah Nakato",
+      name: "Nabuduwa Florence",
       role: "Graphic Design Graduate",
       company: "Namwingwe TechRise",
       image: "testimonial-1",
@@ -153,7 +153,7 @@ export const siteContent = {
     {
       id: 5,
       quote: "Namwigwe TechRise didn't just teach us technology: it empowered us to believe that we can be innovators and leaders in our communities.",
-      name: "Mary Nansubuga",
+      name: "Kakai Esther",
       role: "Full Stack Graduate",
       company: "Namwingwe TechRise",
       image: "testimonial-2",
