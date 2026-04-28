@@ -12,11 +12,13 @@ import {
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
+import testimonial4 from "@/assets/testimonial-4.jpg";
 
 const imageMap: { [key: string]: string } = {
   "testimonial-1": testimonial1,
   "testimonial-2": testimonial2,
   "testimonial-3": testimonial3,
+  "testimonial-4": testimonial4,
 };
 
 export const Testimonials = () => {

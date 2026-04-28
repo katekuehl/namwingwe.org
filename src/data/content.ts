@@ -147,7 +147,7 @@ export const siteContent = {
       name: "Nabuduwa Florence",
       role: "Graphic Design Graduate",
       company: "Namwingwe TechRise",
-      image: "testimonial-1",
+      image: "testimonial-4",
       blogLink: "/blog/sarah-nakato-story",
     },
     {
