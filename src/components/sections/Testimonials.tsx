@@ -76,9 +76,6 @@ export const Testimonials = () => {
                       <div className="font-body font-semibold text-foreground tracking-tight">
                         {testimonial.name}
                       </div>
-                      <div className="text-sm text-muted-foreground">
-                        {testimonial.role} at {testimonial.company}
-                      </div>
                     </div>
                   </div>
                 </div>
