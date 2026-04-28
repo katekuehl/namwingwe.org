@@ -156,7 +156,7 @@ export const siteContent = {
       name: "Kakai Esther",
       role: "Full Stack Graduate",
       company: "Namwingwe TechRise",
-      image: "testimonial-2",
+      image: "testimonial-5",
       blogLink: "/blog/mary-nansubuga-story",
     },
   ],
