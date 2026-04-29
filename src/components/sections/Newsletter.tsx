@@ -69,8 +69,8 @@ export const Newsletter = () => {
           transition={{ duration: 0.5 }}
           className="max-w-2xl mx-auto text-center"
         >
-          <div className="inline-flex w-14 h-14 rounded-2xl bg-primary/15 items-center justify-center mb-6">
-            <Mail className="h-6 w-6 text-primary" />
+          <div className="inline-flex w-10 h-10 rounded-2xl bg-primary/15 items-center justify-center mb-10">
+            <Mail className="h-4 w-4 text-primary" />
           </div>
           <span className="eyebrow inline-block text-primary mb-4">
             Stay Connected
