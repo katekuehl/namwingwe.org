@@ -60,8 +60,8 @@ export const Newsletter = () => {
   };
 
   return (
-    <section id="newsletter" className="section-padding bg-secondary/30">
-      <div className="section-container">
+    <section id="newsletter" className="section-padding bg-secondary">
+      <div className="section-container py-16 bg-[#2d2620]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
