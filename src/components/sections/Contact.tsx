@@ -113,48 +113,27 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="h-5 w-5 text-primary" />
+            <div className="space-y-6">
+              {[
+                { icon: Mail, label: "Email", value: siteContent.contact.email, href: `mailto:${siteContent.contact.email}` },
+                { icon: Phone, label: "Phone", value: siteContent.contact.phone, href: `tel:${siteContent.contact.phone.replace(/\s/g, "")}` },
+                { icon: MapPin, label: "Address", value: siteContent.contact.address },
+              ].map((item) => (
+                <div key={item.label} className="group flex items-start gap-4 p-4 rounded-2xl bg-card/50 hover:bg-card border border-transparent hover:border-border transition-all">
+                  <div className="w-12 h-12 blob bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0 group-hover:from-primary group-hover:to-accent transition-all animate-blob-morph">
+                    <item.icon className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">{item.label}</h3>
+                    {item.href ? (
+                      <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors">{item.value}</a>
+                    ) : (
+                      <p className="text-muted-foreground">{item.value}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Email</h3>
-                  <a
-                    href={`mailto:${siteContent.contact.email}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {siteContent.contact.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Phone</h3>
-                  <a
-                    href={`tel:${siteContent.contact.phone.replace(/\s/g, "")}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {siteContent.contact.phone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Address</h3>
-                  <p className="text-muted-foreground">
-                    {siteContent.contact.address}
-                  </p>
-                </div>
-              </div>
+              ))}
+            </div>
             </div>
 
             {/* Social Links */}
