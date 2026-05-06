@@ -60,65 +60,72 @@ export const Newsletter = () => {
   };
 
   return (
-    <section id="newsletter" className="section-padding bg-secondary">
-      <div className="section-container py-16 bg-[#2d2620]">
+    <section id="newsletter" className="section-padding bg-secondary relative overflow-hidden">
+      <div className="section-container relative">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-2xl mx-auto text-center"
+          transition={{ duration: 0.7 }}
+          className="relative rounded-[2.5rem] overflow-hidden p-10 sm:p-16 bg-gradient-to-br from-[#2d2620] via-[#3a2f25] to-[#2d2620] border border-primary/20"
         >
-          <div className="inline-flex w-10 h-10 rounded-2xl bg-primary/15 items-center justify-center mb-10">
-            <Mail className="h-4 w-4 text-primary" />
-          </div>
-          <span className="eyebrow inline-block text-primary mb-4">
-            Stay Connected
-          </span>
-          <h2 className="heading-section text-secondary-foreground mb-4">
-            Join Our Newsletter
-          </h2>
-          <p className="text-secondary-foreground/70 text-lg mb-8">
-            Get inspiring stories, upcoming programs, and tech tips for women — delivered to your inbox.
-          </p>
+          {/* Decorative blobs */}
+          <div className="absolute -top-24 -left-20 w-80 h-80 blob bg-primary/30 blur-3xl animate-blob-morph animate-float pointer-events-none" />
+          <div className="absolute -bottom-24 -right-20 w-96 h-96 blob-2 bg-accent/25 blur-3xl animate-blob-morph animate-float-slow pointer-events-none" />
+          <div className="absolute inset-0 pattern-dots opacity-25 pointer-events-none" />
 
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <div className="flex-1">
-              <Input
-                type="email"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (error) setError("");
-                }}
-                placeholder="your@email.com"
-                aria-label="Email address"
-                className={`bg-background h-12 ${error ? "border-destructive" : ""}`}
-              />
-              {error && (
-                <p className="text-sm text-destructive mt-1 text-left">{error}</p>
-              )}
+          <div className="relative max-w-2xl mx-auto text-center">
+            <div className="inline-flex w-12 h-12 blob bg-primary/25 items-center justify-center mb-8 animate-blob-morph">
+              <Mail className="h-5 w-5 text-primary-foreground" />
             </div>
-            <Button type="submit" size="lg" disabled={isSubmitting} className="h-12">
-              {isSubmitting ? (
-                <span className="flex items-center gap-2">
-                  <span className="h-4 w-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                  Joining...
-                </span>
-              ) : (
-                <span className="flex items-center gap-2">
-                  Subscribe
-                  <Send className="h-4 w-4" />
-                </span>
-              )}
-            </Button>
-          </form>
-          <p className="text-xs text-secondary-foreground/50 mt-4">
-            We respect your privacy. Unsubscribe anytime.
-          </p>
+            <span className="eyebrow inline-block text-primary mb-4">
+              Stay Connected
+            </span>
+            <h2 className="heading-section text-secondary-foreground mb-4 text-balance">
+              Join Our <span className="animated-gradient-text">Newsletter</span>
+            </h2>
+            <p className="text-secondary-foreground/70 text-lg mb-8">
+              Get inspiring stories, upcoming programs, and tech tips for women — delivered to your inbox.
+            </p>
+
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+            >
+              <div className="flex-1">
+                <Input
+                  type="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (error) setError("");
+                  }}
+                  placeholder="your@email.com"
+                  aria-label="Email address"
+                  className={`bg-background/95 backdrop-blur h-12 rounded-2xl border-0 ${error ? "ring-2 ring-destructive" : ""}`}
+                />
+                {error && (
+                  <p className="text-sm text-destructive mt-1 text-left">{error}</p>
+                )}
+              </div>
+              <Button type="submit" size="lg" disabled={isSubmitting} className="h-12 rounded-2xl shadow-glow">
+                {isSubmitting ? (
+                  <span className="flex items-center gap-2">
+                    <span className="h-4 w-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                    Joining...
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-2">
+                    Subscribe
+                    <Send className="h-4 w-4" />
+                  </span>
+                )}
+              </Button>
+            </form>
+            <p className="text-xs text-secondary-foreground/50 mt-4">
+              We respect your privacy. Unsubscribe anytime.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

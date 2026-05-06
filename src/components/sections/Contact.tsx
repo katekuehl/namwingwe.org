@@ -82,19 +82,22 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-background">
-      <div className="section-container">
+    <section id="contact" className="section-padding bg-background relative overflow-hidden">
+      <div className="absolute -top-32 right-0 w-[500px] h-[500px] blob bg-primary/10 blur-3xl animate-float-slow pointer-events-none" />
+      <div className="absolute -bottom-32 -left-20 w-[420px] h-[420px] blob-2 bg-accent/10 blur-3xl animate-float pointer-events-none" />
+
+      <div className="section-container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="eyebrow inline-block text-primary mb-4">
             Contact Us
           </span>
-          <h2 className="heading-section text-foreground mb-4">
+          <h2 className="heading-section text-foreground mb-4 text-balance">
             {siteContent.contact.title}
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -110,48 +113,26 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="h-5 w-5 text-primary" />
+            <div className="space-y-6">
+              {[
+                { icon: Mail, label: "Email", value: siteContent.contact.email, href: `mailto:${siteContent.contact.email}` },
+                { icon: Phone, label: "Phone", value: siteContent.contact.phone, href: `tel:${siteContent.contact.phone.replace(/\s/g, "")}` },
+                { icon: MapPin, label: "Address", value: siteContent.contact.address },
+              ].map((item) => (
+                <div key={item.label} className="group flex items-start gap-4 p-4 rounded-2xl bg-card/50 hover:bg-card border border-transparent hover:border-border transition-all">
+                  <div className="w-12 h-12 blob bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0 group-hover:from-primary group-hover:to-accent transition-all animate-blob-morph">
+                    <item.icon className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">{item.label}</h3>
+                    {item.href ? (
+                      <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors">{item.value}</a>
+                    ) : (
+                      <p className="text-muted-foreground">{item.value}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Email</h3>
-                  <a
-                    href={`mailto:${siteContent.contact.email}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {siteContent.contact.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Phone</h3>
-                  <a
-                    href={`tel:${siteContent.contact.phone.replace(/\s/g, "")}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {siteContent.contact.phone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-body font-semibold text-foreground mb-1 tracking-tight">Address</h3>
-                  <p className="text-muted-foreground">
-                    {siteContent.contact.address}
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Social Links */}
@@ -159,14 +140,14 @@ export const Contact = () => {
               <h3 className="font-body font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
                 Follow Us
               </h3>
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+                    className="w-12 h-12 rounded-2xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary hover:-translate-y-1 hover:shadow-bronze transition-all duration-300"
                     aria-label={social.label}
                   >
                     <social.icon className="h-5 w-5" />
@@ -183,7 +164,8 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <form onSubmit={handleSubmit} className="bg-card rounded-xl p-8 border border-border">
+            <form onSubmit={handleSubmit} className="relative bg-gradient-to-br from-card via-card to-primary/5 rounded-3xl p-8 border border-border shadow-soft overflow-hidden">
+              <div className="absolute -top-16 -right-16 w-40 h-40 blob bg-primary/15 blur-2xl animate-blob-morph pointer-events-none" />
               <div className="space-y-6">
                 <div>
                   <Label htmlFor="name" className="text-foreground">
