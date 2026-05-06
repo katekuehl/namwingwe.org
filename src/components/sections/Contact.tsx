@@ -140,14 +140,14 @@ export const Contact = () => {
               <h3 className="font-body font-semibold text-foreground mb-4 text-sm uppercase tracking-wider">
                 Follow Us
               </h3>
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+                    className="w-12 h-12 rounded-2xl bg-card border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary hover:-translate-y-1 hover:shadow-bronze transition-all duration-300"
                     aria-label={social.label}
                   >
                     <social.icon className="h-5 w-5" />
