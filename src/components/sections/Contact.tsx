@@ -164,7 +164,8 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <form onSubmit={handleSubmit} className="bg-card rounded-xl p-8 border border-border">
+            <form onSubmit={handleSubmit} className="relative bg-gradient-to-br from-card via-card to-primary/5 rounded-3xl p-8 border border-border shadow-soft overflow-hidden">
+              <div className="absolute -top-16 -right-16 w-40 h-40 blob bg-primary/15 blur-2xl animate-blob-morph pointer-events-none" />
               <div className="space-y-6">
                 <div>
                   <Label htmlFor="name" className="text-foreground">
