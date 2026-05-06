@@ -75,7 +75,7 @@ export const Newsletter = () => {
           <div className="absolute inset-0 pattern-dots opacity-25 pointer-events-none" />
 
           <div className="relative max-w-2xl mx-auto text-center">
-            <div className="inline-flex w-12 h-12 blob bg-primary/25 items-center justify-center mb-8 animate-blob-morph">
+            <div className="inline-flex w-10 h-10 rounded-2xl bg-primary/15 items-center justify-center pt-0 mb-[30px] mr-[10px]">
               <Mail className="h-5 w-5 text-primary-foreground" />
             </div>
             <span className="eyebrow inline-block text-primary mb-4">
