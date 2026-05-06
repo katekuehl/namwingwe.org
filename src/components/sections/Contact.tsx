@@ -134,7 +134,6 @@ export const Contact = () => {
                 </div>
               ))}
             </div>
-            </div>
 
             {/* Social Links */}
             <div className="mt-10 pt-8 border-t border-border">
