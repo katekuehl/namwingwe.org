@@ -82,19 +82,22 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-background">
-      <div className="section-container">
+    <section id="contact" className="section-padding bg-background relative overflow-hidden">
+      <div className="absolute -top-32 right-0 w-[500px] h-[500px] blob bg-primary/10 blur-3xl animate-float-slow pointer-events-none" />
+      <div className="absolute -bottom-32 -left-20 w-[420px] h-[420px] blob-2 bg-accent/10 blur-3xl animate-float pointer-events-none" />
+
+      <div className="section-container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="eyebrow inline-block text-primary mb-4">
             Contact Us
           </span>
-          <h2 className="heading-section text-foreground mb-4">
+          <h2 className="heading-section text-foreground mb-4 text-balance">
             {siteContent.contact.title}
           </h2>
           <p className="text-muted-foreground text-lg">
