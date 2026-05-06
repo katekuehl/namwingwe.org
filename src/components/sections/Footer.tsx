@@ -14,8 +14,10 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
-      <div className="section-container py-16">
+    <footer className="bg-secondary text-secondary-foreground relative overflow-hidden">
+      <div className="absolute -top-40 left-1/3 w-[500px] h-[500px] blob bg-primary/10 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 pattern-dots opacity-20 pointer-events-none" />
+      <div className="section-container py-16 relative">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-1">
