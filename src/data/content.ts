@@ -15,7 +15,7 @@ export const siteContent = {
   trustStrip: {
     title: "Trusted by leading organizations",
     stats: [
-      { value: "500+", label: "Women Trained" },
+      { value: "400+", label: "Women Trained" },
     ],
   },
 
