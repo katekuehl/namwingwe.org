@@ -3,6 +3,7 @@ import { Award, Users, Building, Star } from "lucide-react";
 
 const partners = [
   { name: "MTN Uganda", icon: Building },
+  { name: "Makerere University", icon: Award },
 ];
 
 export const TrustStrip = () => {
