@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Code, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,11 @@ import { Link } from "react-router-dom";
 const WebDevelopment = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Web Development Bootcamp | Namwingwe TechRise"
+        description="Learn HTML, CSS, JavaScript and React in our women-only web development bootcamp in Kampala, Uganda. Graduate job-ready with real projects."
+        path="/web-development"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="section-container">

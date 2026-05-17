@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Figma, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,11 @@ import { Link } from "react-router-dom";
 const UIUXDesign = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="UI/UX Design Course | Namwingwe TechRise"
+        description="Learn Figma, prototyping, and user-centered design in our UI/UX program empowering women across Uganda."
+        path="/ui-ux-design"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="section-container">

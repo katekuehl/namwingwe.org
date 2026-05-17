@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Monitor, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,11 @@ import { Link } from "react-router-dom";
 const WebsiteDesign = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Website Design Training | Namwingwe TechRise"
+        description="Build beautiful, responsive websites with modern tools in our women-focused website design course in Kampala, Uganda."
+        path="/website-design"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="section-container">

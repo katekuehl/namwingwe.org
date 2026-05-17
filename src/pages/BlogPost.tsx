@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { getBlogPostBySlug, blogPosts } from "@/data/blogPosts";
 
@@ -15,6 +16,20 @@ const BlogPost = () => {
   }
 
   const otherPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 2);
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    author: { "@type": "Person", name: post.author },
+    datePublished: post.publishedAt,
+    publisher: {
+      "@type": "Organization",
+      name: "Namwingwe TechRise",
+      logo: { "@type": "ImageObject", url: "https://namwingwe.lovable.app/og-image.jpg" },
+    },
+  };
 
   const handleShare = async () => {
     if (navigator.share) {
@@ -32,6 +47,13 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${post.title} | Namwingwe TechRise`}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+        type="article"
+        jsonLd={articleJsonLd}
+      />
       <Header />
       <main className="pt-24 pb-16">
         <article className="section-container">

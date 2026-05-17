@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Palette, ArrowLeft, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,11 @@ import { Link } from "react-router-dom";
 const GraphicDesign = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Graphic Design Training for Women | Namwingwe TechRise"
+        description="Master Adobe Creative Suite, brand identity, and visual storytelling in our graphic design program for Ugandan women in Kampala."
+        path="/graphic-design"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="section-container">
