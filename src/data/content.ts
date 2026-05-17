@@ -16,9 +16,6 @@ export const siteContent = {
     title: "Trusted by leading organizations",
     stats: [
       { value: "500+", label: "Women Trained" },
-      
-      
-      { value: "4.9", label: "Student Rating" },
     ],
   },
 
