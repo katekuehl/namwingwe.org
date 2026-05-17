@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
+# Namwingwe TechRise
 
-## Project info
+Website for [Namwingwe TechRise](https://namwingwetechrise.org) — empowering Ugandan women with hands-on training in web development, graphic design, and UI/UX design.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Tech Stack
 
-## How can I edit this code?
+- **React 18** + **TypeScript**
+- **Vite** — build tooling
+- **Tailwind CSS** + **shadcn/ui** — styling and components
+- **Supabase** — contact form and newsletter submissions
+- **Framer Motion** — animations
+- **React Router** — client-side routing
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+**Prerequisites:** Node.js 18+ and npm
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repo
+git clone https://github.com/katekuehl/namwingwe.org.git
+cd namwingwe.org
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Copy the environment file and fill in your Supabase credentials
+cp .env.example .env
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the dev server at http://localhost:8080
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file from `.env.example`:
 
-**Use GitHub Codespaces**
+| Variable | Description |
+|---|---|
+| `VITE_SUPABASE_URL` | Your Supabase project URL |
+| `VITE_SUPABASE_PUBLISHABLE_KEY` | Supabase anon/public key |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Scripts
 
-## What technologies are used for this project?
+```sh
+npm run dev       # Dev server with HMR
+npm run build     # Production build
+npm run preview   # Preview the production build locally
+npm run lint      # ESLint
+npm run test      # Run tests (Vitest)
+```
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The site deploys automatically to GitHub Pages via GitHub Actions on every push to `main`.
 
-## How can I deploy this project?
+**Required GitHub repository secrets:**
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+To enable Pages: repo **Settings → Pages → Source → GitHub Actions**
 
-## Can I connect a custom domain to my Lovable project?
+## Database
 
-Yes, you can!
+Supabase migrations live in `supabase/migrations/`. Run them with the Supabase CLI:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```sh
+supabase db push
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The schema includes:
+- `contact_submissions` — contact form entries (admin-only read)
+- `newsletter_subscribers` — newsletter signups (admin-only read)
+- `user_roles` — role-based access control
+
+## Project Structure
+
+```
+src/
+├── assets/          # Images and static files
+├── components/
+│   ├── layout/      # Header, Footer
+│   ├── sections/    # Page sections (Hero, About, Contact…)
+│   └── ui/          # shadcn/ui primitives
+├── data/            # Site content and blog posts
+├── hooks/           # Custom React hooks
+├── integrations/    # Supabase client and types
+├── pages/           # Route-level page components
+└── lib/             # Utility functions
+```
+
+## Contact
+
+**Namwingwe TechRise** · Kampala, Uganda  
+namwingwetechrise@gmail.com · +256 786 946529
