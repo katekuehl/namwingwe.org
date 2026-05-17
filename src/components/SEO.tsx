@@ -9,7 +9,7 @@ interface SEOProps {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const SITE_URL = "https://namwingwe.lovable.app";
+const SITE_URL = "https://namwingwetechrise.org";
 
 export const SEO = ({
   title,

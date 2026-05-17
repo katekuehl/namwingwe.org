@@ -130,15 +130,6 @@ export const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-secondary/40 via-transparent to-transparent" />
             </div>
-            {/* Floating badge */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-4 -left-6 glass rounded-2xl px-5 py-3 shadow-elevated"
-            >
-              <div className="text-2xl font-display font-semibold text-foreground">100%</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Women-led</div>
-            </motion.div>
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}

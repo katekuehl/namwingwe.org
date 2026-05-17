@@ -27,7 +27,7 @@ const BlogPost = () => {
     publisher: {
       "@type": "Organization",
       name: "Namwingwe TechRise",
-      logo: { "@type": "ImageObject", url: "https://namwingwe.lovable.app/og-image.jpg" },
+      logo: { "@type": "ImageObject", url: "https://namwingwetechrise.org/og-image.jpg" },
     },
   };
 

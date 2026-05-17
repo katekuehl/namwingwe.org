@@ -199,7 +199,7 @@ export const siteContent = {
     links: {
       programs: ["Web Development", "Graphic Design", "UI/UX Design", "Website Design"],
       company: ["About Us", "Our Team"],
-      resources: ["Blog", "Success Stories", "FAQ", "Contact"],
+      resources: ["Success Stories", "FAQ", "Contact"],
     },
     copyright: "© 2024 Namwingwe TechRise. All rights reserved.",
   },

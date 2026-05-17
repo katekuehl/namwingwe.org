@@ -10,6 +10,13 @@ const programLinks: Record<string, string> = {
   "Website Design": "/website-design",
 };
 
+const resourceLinks: Record<string, string> = {
+  "Blog": "/blog",
+  "Success Stories": "/blog",
+  "FAQ": "#faq",
+  "Contact": "#contact",
+};
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -76,16 +83,29 @@ export const Footer = () => {
               Resources
             </h4>
             <ul className="space-y-3">
-              {siteContent.footer.links.resources.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link === "FAQ" ? "#faq" : link === "Contact" ? "#contact" : "#"}
-                    className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {siteContent.footer.links.resources.map((link, index) => {
+                const href = resourceLinks[link] || "#";
+                const isInternal = href.startsWith("/");
+                return (
+                  <li key={index}>
+                    {isInternal ? (
+                      <Link
+                        to={href}
+                        className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
+                      >
+                        {link}
+                      </Link>
+                    ) : (
+                      <a
+                        href={href}
+                        className="text-secondary-foreground/70 hover:text-primary transition-colors text-sm"
+                      >
+                        {link}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
