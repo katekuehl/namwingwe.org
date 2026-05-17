@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SEO } from "@/components/SEO";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
@@ -11,6 +12,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Success Stories & Insights | Namwingwe TechRise Blog"
+        description="Read inspiring stories from Ugandan women transforming their careers through tech, and insights from our graphic and website design programs."
+        path="/blog"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="section-container">
