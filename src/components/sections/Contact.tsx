@@ -58,6 +58,7 @@ export const Contact = () => {
     setIsSubmitting(false);
 
     if (error) {
+      console.error("Contact form insert error:", error);
       toast({
         title: "Something went wrong",
         description: "Please try again in a moment.",
