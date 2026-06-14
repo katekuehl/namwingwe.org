@@ -36,7 +36,7 @@ export const Newsletter = () => {
     setIsSubmitting(false);
 
     if (insertError) {
-      console.error("Newsletter insert error:", insertError);
+      console.error("Newsletter insert error:", JSON.stringify(insertError));
       if (insertError.code === "23505") {
         toast({
           title: "Already subscribed",
